@@ -183,6 +183,10 @@ export PATH="/usr/lib/ccache/bin/:$PATH"
 # 防止 pkgfile 的问题：来自 ArchLinux Wiki
 source /usr/share/doc/pkgfile/command-not-found.zsh
 
+#压缩
+# XZ多线程压缩（从5.2版本开始
+export XZ_OPT="--threads=0"
+
 #编辑器
 export EDITOR="vim"
 
@@ -397,6 +401,8 @@ alias grep='grep --color=auto'
 alias la='ls -a'
 alias pacman='sudo pacman-color'
 alias p='sudo pacman-color'
+#保留xz压缩源文件
+#alias xz='xz -k'
 alias y='yaourt'
 #alias h='htop'
 #alias vim='sudo vim'
