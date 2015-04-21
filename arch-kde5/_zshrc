@@ -404,6 +404,8 @@ alias la='ls -a'
 alias p='sudo pacman-color'
 #保留xz压缩源文件
 #alias xz='xz -k'
+# must install 'thefuck' in archlinux repo
+# alias fuck='$(thefuck $(fc -ln -1))'
 alias y='yaourt'
 #alias h='htop'
 #alias vim='sudo vim'
